@@ -1,0 +1,82 @@
+{
+  "nav": {
+    "games": "Games",
+    "sports": "Sports Betting",
+    "promotions": "Promotions",
+    "login": "Login",
+    "register": "Register",
+    "deposit": "Deposit",
+    "withdraw": "Withdraw",
+    "dashboard": "My Account",
+    "logout": "Logout"
+  },
+  "home": {
+    "hero_title": "Uganda's Premier Casino",
+    "hero_sub": "Play slots, blackjack, roulette, crash games & live sports betting",
+    "hero_cta": "Play Now",
+    "hero_cta2": "View Promotions",
+    "welcome_bonus": "100% Welcome Bonus up to UGX 100,000",
+    "jackpot_label": "Current Jackpot"
+  },
+  "games": {
+    "slots": "Slots",
+    "table": "Table Games",
+    "live": "Live Casino",
+    "crash": "Crash Games",
+    "sports": "Sports",
+    "play_now": "Play Now",
+    "try_demo": "Try Demo",
+    "rtp": "RTP",
+    "min_bet": "Min Bet",
+    "max_bet": "Max Bet"
+  },
+  "sports": {
+    "football": "Football",
+    "basketball": "Basketball",
+    "tennis": "Tennis",
+    "mma": "MMA / UFC",
+    "place_bet": "Place Bet",
+    "potential_win": "Potential Win",
+    "stake": "Stake (UGX)",
+    "odds": "Odds",
+    "bet_slip": "Bet Slip"
+  },
+  "auth": {
+    "email": "Email Address",
+    "password": "Password",
+    "username": "Username",
+    "first_name": "First Name",
+    "last_name": "Last Name",
+    "dob": "Date of Birth",
+    "phone": "Phone Number",
+    "login_title": "Welcome Back",
+    "register_title": "Create Account",
+    "forgot_password": "Forgot Password?",
+    "have_account": "Already have an account?",
+    "no_account": "Don't have an account?",
+    "terms": "I agree to Terms & Conditions",
+    "register_btn": "Create Account",
+    "login_btn": "Login"
+  },
+  "wallet": {
+    "balance": "Balance",
+    "bonus": "Bonus",
+    "deposit": "Deposit",
+    "withdraw": "Withdraw",
+    "history": "Transaction History",
+    "method_mtn": "MTN Mobile Money",
+    "method_airtel": "Airtel Money",
+    "method_card": "Visa / Mastercard",
+    "amount": "Amount (UGX)",
+    "phone": "Mobile Number",
+    "confirm": "Confirm"
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "back": "Back",
+    "save": "Save",
+    "cancel": "Cancel",
+    "ugx": "UGX"
+  }
+}

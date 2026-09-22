@@ -1,0 +1,16 @@
+{
+  "framework": "nextjs",
+  "buildCommand": "npm run build",
+  "outputDirectory": ".next",
+  "installCommand": "npm install",
+  "env": {
+    "NEXT_PUBLIC_SUPABASE_URL": "@supabase_url",
+    "NEXT_PUBLIC_SUPABASE_ANON_KEY": "@supabase_anon_key",
+    "SUPABASE_SERVICE_ROLE_KEY": "@supabase_service_role_key",
+    "SLOTSLAUNCH_API_KEY": "@slotslaunch_api_key",
+    "ODDS_API_KEY": "@odds_api_key",
+    "DUSUPAY_API_KEY": "@dusupay_api_key",
+    "DUSUPAY_MERCHANT_ID": "@dusupay_merchant_id",
+    "DUSUPAY_ENVIRONMENT": "@dusupay_environment"
+  }
+}

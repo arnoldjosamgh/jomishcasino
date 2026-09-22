@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap');
+
+:root {
+  /* === Jomish Casino Brand Colors === */
+  --jomish-green-950: #021a0e;
+  --jomish-green-900: #042d17;
+  --jomish-green-800: #064520;
+  --jomish-green-700: #0d6e35;
+  --jomish-green-600: #158540;
+  --jomish-green-500: #1a9e4e;
+  --jomish-green-400: #22c55e;
+  --jomish-green-300: #4ade80;
+
+  --jomish-gold-900: #3d2800;
+  --jomish-gold-800: #6b4500;
+  --jomish-gold-700: #a16207;
+  --jomish-gold-600: #ca8a04;
+  --jomish-gold-500: #eab308;
+  --jomish-gold-400: #facc15;
+  --jomish-gold-300: #fde047;
+  --jomish-gold-200: #fef08a;
+
+  --jomish-dark-950: #030712;
+  --jomish-dark-900: #0a0f1a;
+  --jomish-dark-800: #0f172a;
+  --jomish-dark-700: #1e293b;
+  --jomish-dark-600: #334155;
+  --jomish-dark-500: #475569;
+
+  /* === Semantic tokens === */
+  --bg-primary: var(--jomish-dark-950);
+  --bg-secondary: var(--jomish-dark-900);
+  --bg-card: rgba(15, 23, 42, 0.85);
+  --bg-glass: rgba(6, 69, 32, 0.12);
+  --border-green: rgba(34, 197, 94, 0.25);
+  --border-gold: rgba(234, 179, 8, 0.3);
+  --text-primary: #f0fdf4;
+  --text-secondary: #94a3b8;
+  --text-gold: var(--jomish-gold-400);
+  --text-green: var(--jomish-green-400);
+
+  /* === Gradients === */
+  --grad-hero: radial-gradient(ellipse at 20% 50%, rgba(6, 69, 32, 0.6) 0%, transparent 60%),
+               radial-gradient(ellipse at 80% 20%, rgba(234, 179, 8, 0.1) 0%, transparent 50%),
+               linear-gradient(135deg, #030712 0%, #0a0f1a 50%, #042d17 100%);
+  --grad-card: linear-gradient(135deg, rgba(6, 69, 32, 0.15) 0%, rgba(15, 23, 42, 0.9) 100%);
+  --grad-gold: linear-gradient(135deg, #ca8a04, #fde047, #ca8a04);
+  --grad-green: linear-gradient(135deg, #0d6e35, #22c55e);
+  --grad-button: linear-gradient(135deg, #ca8a04 0%, #facc15 50%, #ca8a04 100%);
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  min-height: 100vh;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+/* === Utility Classes === */
+.text-gold { color: var(--text-gold); }
+.text-green-jomish { color: var(--text-green); }
+.bg-jomish { background: var(--grad-hero); }
+
+/* Glassmorphism card */
+.glass-card {
+  background: var(--bg-card);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid var(--border-green);
+  border-radius: 16px;
+}
+
+.glass-card-gold {
+  background: var(--bg-card);
+  backdrop-filter: blur(16px);
+  border: 1px solid var(--border-gold);
+  border-radius: 16px;
+}
+
+/* Gold CTA button */
+.btn-gold {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.75rem;
+  background: var(--grad-button);
+  background-size: 200% auto;
+  color: #030712;
+  font-family: 'Outfit', sans-serif;
+  font-weight: 700;
+  font-size: 0.95rem;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.btn-gold:hover {
+  background-position: right center;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(234, 179, 8, 0.4);
+}
+.btn-gold:active { transform: translateY(0); }
+
+/* Green secondary button */
+.btn-green {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.75rem;
+  background: transparent;
+  color: var(--jomish-green-400);
+  font-family: 'Outfit', sans-serif;
+  font-weight: 600;
+  font-size: 0.95rem;
+  border-radius: 12px;
+  border: 1.5px solid var(--jomish-green-500);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+.btn-green:hover {
+  background: rgba(34, 197, 94, 0.12);
+  border-color: var(--jomish-green-300);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(34, 197, 94, 0.25);
+}
+
+/* Ghost button */
+.btn-ghost {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.65rem 1.25rem;
+  background: rgba(255,255,255,0.06);
+  color: var(--text-primary);
+  font-weight: 500;
+  border-radius: 10px;
+  border: 1px solid rgba(255,255,255,0.1);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+.btn-ghost:hover { background: rgba(255,255,255,0.1); border-color: rgba(255,255,255,0.2); }
+
+/* Game card */
+.game-card {
+  background: var(--grad-card);
+  border: 1px solid var(--border-green);
+  border-radius: 14px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  position: relative;
+}
+.game-card:hover {
+  transform: translateY(-6px);
+  border-color: var(--jomish-gold-600);
+  box-shadow: 0 16px 40px rgba(0,0,0,0.5), 0 0 20px rgba(234, 179, 8, 0.2);
+}
+.game-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 2px;
+  background: var(--grad-gold);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.game-card:hover::before { opacity: 1; }
+
+/* Badge */
+.badge {
+  display: inline-block;
+  padding: 0.2rem 0.65rem;
+  border-radius: 999px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  font-family: 'Outfit', sans-serif;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+.badge-gold { background: rgba(234,179,8,0.2); color: var(--jomish-gold-300); border: 1px solid rgba(234,179,8,0.3); }
+.badge-green { background: rgba(34,197,94,0.15); color: var(--jomish-green-300); border: 1px solid rgba(34,197,94,0.25); }
+.badge-red { background: rgba(239,68,68,0.15); color: #fca5a5; border: 1px solid rgba(239,68,68,0.25); }
+.badge-blue { background: rgba(99,102,241,0.15); color: #a5b4fc; border: 1px solid rgba(99,102,241,0.25); }
+
+/* Input */
+.jomish-input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  background: rgba(15,23,42,0.8);
+  border: 1.5px solid var(--jomish-dark-600);
+  border-radius: 10px;
+  color: var(--text-primary);
+  font-size: 0.95rem;
+  font-family: 'Inter', sans-serif;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+.jomish-input:focus {
+  border-color: var(--jomish-green-500);
+  box-shadow: 0 0 0 3px rgba(34,197,94,0.15);
+}
+.jomish-input::placeholder { color: var(--text-secondary); }
+
+/* Section header */
+.section-title {
+  font-family: 'Outfit', sans-serif;
+  font-size: clamp(1.5rem, 3vw, 2.25rem);
+  font-weight: 800;
+  background: linear-gradient(135deg, #f0fdf4, var(--jomish-gold-300));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Jackpot glow text */
+.jackpot-text {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 900;
+  background: var(--grad-gold);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-shadow: none;
+  filter: drop-shadow(0 0 12px rgba(234,179,8,0.5));
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: var(--jomish-dark-900); }
+::-webkit-scrollbar-thumb { background: var(--jomish-green-700); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: var(--jomish-green-500); }
+
+/* Animations */
+@keyframes shimmer {
+  0% { background-position: -200% center; }
+  100% { background-position: 200% center; }
+}
+@keyframes pulse-glow {
+  0%, 100% { box-shadow: 0 0 10px rgba(234,179,8,0.3); }
+  50% { box-shadow: 0 0 25px rgba(234,179,8,0.6), 0 0 50px rgba(234,179,8,0.2); }
+}
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-8px); }
+}
+@keyframes spin-slow { to { transform: rotate(360deg); } }
+@keyframes count-up {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes slide-in-right {
+  from { opacity: 0; transform: translateX(40px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+@keyframes fade-in-up {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-shimmer {
+  background: linear-gradient(90deg, var(--jomish-gold-700) 25%, var(--jomish-gold-400) 50%, var(--jomish-gold-700) 75%);
+  background-size: 200% auto;
+  animation: shimmer 2s linear infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.animate-pulse-glow { animation: pulse-glow 2s ease-in-out infinite; }
+.animate-float { animation: float 3s ease-in-out infinite; }
+.animate-fade-in-up { animation: fade-in-up 0.6s ease forwards; }
+.animate-slide-in-right { animation: slide-in-right 0.5s ease forwards; }
+
+/* Bet slip / sidebar */
+.bet-slip {
+  background: var(--jomish-dark-900);
+  border: 1px solid var(--border-gold);
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+/* Status colors */
+.status-win { color: #4ade80; }
+.status-loss { color: #f87171; }
+.status-pending { color: #fbbf24; }
+
+/* Layout helpers */
+.container-jomish { max-width: 1400px; margin: 0 auto; padding: 0 1.25rem; }
+
+/* Responsive */
+@media (max-width: 768px) {
+  .btn-gold, .btn-green { padding: 0.65rem 1.25rem; font-size: 0.875rem; }
+}

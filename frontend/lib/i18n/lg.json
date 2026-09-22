@@ -1,0 +1,82 @@
+{
+  "nav": {
+    "games": "Emizannyo",
+    "sports": "Okukuba Ebyefuba",
+    "promotions": "Ebintu Eby'enjawulo",
+    "login": "Yingira",
+    "register": "Wandiika",
+    "deposit": "Yingiza Ssente",
+    "withdraw": "Ggyawo Ssente",
+    "dashboard": "Akawunti Yange",
+    "logout": "Fuluma"
+  },
+  "home": {
+    "hero_title": "Kasino Ey'Ennono mu Uganda",
+    "hero_sub": "Zana emizannyo gya kasino n'okukuba ebyefuba by'emizannyo",
+    "hero_cta": "Zana Kaakano",
+    "hero_cta2": "Laba Ebintu Eby'enjawulo",
+    "welcome_bonus": "Bonasi 100% okutuuka ku UGX 100,000",
+    "jackpot_label": "Jackpot y'Eggulo"
+  },
+  "games": {
+    "slots": "Emizannyo gya Mashine",
+    "table": "Emizannyo gy'Emmeeza",
+    "live": "Kasino ey'Obuli",
+    "crash": "Emizannyo gya Crash",
+    "sports": "Emizannyo",
+    "play_now": "Zana Kaakano",
+    "try_demo": "Gezaako Demo",
+    "rtp": "Ebipimo by'Okusubizibwamu",
+    "min_bet": "Okukuba Okunono",
+    "max_bet": "Okukuba Okukulungi"
+  },
+  "sports": {
+    "football": "Empira y'Amagulu",
+    "basketball": "Basket Ball",
+    "tennis": "Tennis",
+    "mma": "MMA / UFC",
+    "place_bet": "Kuba Ffene",
+    "potential_win": "Okunoba Okusookeera",
+    "stake": "Omuwendo (UGX)",
+    "odds": "Emiwendo",
+    "bet_slip": "Kaadi y'Okukuba"
+  },
+  "auth": {
+    "email": "Emeyili",
+    "password": "Ekigambo ky'Okulinda",
+    "username": "Erinnya ly'Okozesa",
+    "first_name": "Erinnya Erya Sooka",
+    "last_name": "Erinnya Erya Ggumba",
+    "dob": "Olunaku lw'Okuzaalibwa",
+    "phone": "Ennamba y'Essimu",
+    "login_title": "Tukusanyukidde",
+    "register_title": "Kakasa Akawunti",
+    "forgot_password": "Weerabira Ekigambo?",
+    "have_account": "Olinawo akawunti?",
+    "no_account": "Tolina akawunti?",
+    "terms": "Nkkiriziganya n'Amateeka",
+    "register_btn": "Kakasa Akawunti",
+    "login_btn": "Yingira"
+  },
+  "wallet": {
+    "balance": "Obuwagizi",
+    "bonus": "Bonasi",
+    "deposit": "Yingiza Ssente",
+    "withdraw": "Ggyawo Ssente",
+    "history": "Ebyafaayo by'Empawulo",
+    "method_mtn": "MTN Mobile Money",
+    "method_airtel": "Airtel Money",
+    "method_card": "Visa / Mastercard",
+    "amount": "Omuwendo (UGX)",
+    "phone": "Ennamba y'Essimu",
+    "confirm": "Kakasa"
+  },
+  "common": {
+    "loading": "Kutegeka...",
+    "error": "Waliwo ekizibu",
+    "back": "Ddayo",
+    "save": "Tereka",
+    "cancel": "Ssuula",
+    "ugx": "UGX"
+  }
+}

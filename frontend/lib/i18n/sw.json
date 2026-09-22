@@ -1,0 +1,82 @@
+{
+  "nav": {
+    "games": "Michezo",
+    "sports": "Kubashiria Michezo",
+    "promotions": "Matangazo",
+    "login": "Ingia",
+    "register": "Jiandikishe",
+    "deposit": "Weka Pesa",
+    "withdraw": "Toa Pesa",
+    "dashboard": "Akaunti Yangu",
+    "logout": "Toka"
+  },
+  "home": {
+    "hero_title": "Kasino Bora Uganda",
+    "hero_sub": "Cheza michezo ya kasino na kubashiria michezo ya kuburudisha",
+    "hero_cta": "Cheza Sasa",
+    "hero_cta2": "Tazama Matangazo",
+    "welcome_bonus": "Bonasi ya 100% hadi UGX 100,000",
+    "jackpot_label": "Jackpot ya Sasa"
+  },
+  "games": {
+    "slots": "Mashine za Pesa",
+    "table": "Michezo ya Meza",
+    "live": "Kasino ya Moja kwa Moja",
+    "crash": "Michezo ya Crash",
+    "sports": "Michezo",
+    "play_now": "Cheza Sasa",
+    "try_demo": "Jaribu Demo",
+    "rtp": "Kiwango cha Kurudi",
+    "min_bet": "Dau la Chini",
+    "max_bet": "Dau la Juu"
+  },
+  "sports": {
+    "football": "Mpira wa Miguu",
+    "basketball": "Mpira wa Kikapu",
+    "tennis": "Tenisi",
+    "mma": "MMA / UFC",
+    "place_bet": "Weka Dau",
+    "potential_win": "Ushindi Unaowezekana",
+    "stake": "Kiasi (UGX)",
+    "odds": "Uwiano",
+    "bet_slip": "Kadi ya Dau"
+  },
+  "auth": {
+    "email": "Barua Pepe",
+    "password": "Neno la Siri",
+    "username": "Jina la Mtumiaji",
+    "first_name": "Jina la Kwanza",
+    "last_name": "Jina la Mwisho",
+    "dob": "Tarehe ya Kuzaliwa",
+    "phone": "Nambari ya Simu",
+    "login_title": "Karibu Tena",
+    "register_title": "Fungua Akaunti",
+    "forgot_password": "Umesahau Neno la Siri?",
+    "have_account": "Una akaunti tayari?",
+    "no_account": "Huna akaunti?",
+    "terms": "Nakubali Masharti na Hali",
+    "register_btn": "Fungua Akaunti",
+    "login_btn": "Ingia"
+  },
+  "wallet": {
+    "balance": "Salio",
+    "bonus": "Bonasi",
+    "deposit": "Weka Pesa",
+    "withdraw": "Toa Pesa",
+    "history": "Historia ya Miamala",
+    "method_mtn": "MTN Mobile Money",
+    "method_airtel": "Airtel Money",
+    "method_card": "Visa / Mastercard",
+    "amount": "Kiasi (UGX)",
+    "phone": "Nambari ya Simu",
+    "confirm": "Thibitisha"
+  },
+  "common": {
+    "loading": "Inapakia...",
+    "error": "Hitilafu imetokea",
+    "back": "Rudi",
+    "save": "Hifadhi",
+    "cancel": "Ghairi",
+    "ugx": "UGX"
+  }
+}
