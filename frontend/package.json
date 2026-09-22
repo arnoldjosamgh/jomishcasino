@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "next dev --turbopack --port 4000",
     "build": "next build",
-    "start": "next start --port 4000",
+    "start": "next start --port ${PORT:-4000}",
     "lint": "eslint"
   },
   "dependencies": {
@@ -13,6 +13,7 @@
     "react-dom": "19.1.0",
     "next": "15.5.9",
     "@supabase/supabase-js": "^2.45.0",
+    "@supabase/ssr": "^0.5.0",
     "i18next": "^23.15.0",
     "react-i18next": "^15.0.0"
   },
