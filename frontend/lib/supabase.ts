@@ -6,6 +6,10 @@ const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY || 'placeholde
 // Client-side Supabase client (anon key — safe for browser)
 export const supabase = createClient(supabaseUrl, supabaseAnonKey);
 
+// Named export alias so pages can do: import { createClient } from '@/lib/supabase'
+export { createClient };
+
+
 // Server-side admin client (service role — only use in API routes)
 export function createAdminClient() {
   const serviceRoleKey = process.env.SUPABASE_SERVICE_ROLE_KEY || 'placeholder-service-key';
